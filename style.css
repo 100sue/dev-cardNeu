@@ -354,7 +354,202 @@ body {
 .explication .card2 .box .content a:hover {
     background: #ff560f;
 }
+/*-------  Contact Me  -----------*/
 
+.liquid {
+    position: relative;
+    left: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.liquid .drop {
+    position: relative;
+    width: 525px;
+    height: 525px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05),
+    25px 30px 30px rgba(0, 0, 0, 0.05),
+    inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+    transition: 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 53% 47% 29% 71% / 44% 42% 58% 56% ;
+}
+.liquid .drop:hover {
+    border-radius: 50%;
+}
+.liquid .drop::before {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 150px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.9;
+} 
+.liquid .drop::after {
+    content: '';
+    position: absolute;
+    top: 68px;
+    left: 178px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.9;
+} 
+.liquid .drop .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    gap: 15px;
+}
+.liquid .drop .content h2 {
+    position: relative;
+    color: #777;
+    font-size: 1.5em;
+}
+.liquid .drop .content form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.liquid .drop .content form .inputbox {
+    position: relative;
+    width: 225px;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+                inset -2px -5px 10px rgba(255, 255, 255, 1),
+                        15px 15px 10px rgba(0, 0, 0, 0.05),
+                        15px 10px 15px rgba(0, 0, 0, 0.025);
+    border-radius: 25px;
+}
+.liquid .drop .content form .inputbox::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+.liquid .drop .content form .inputbox input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 15px;
+}
+.liquid .drop .content form .inputbox textarea {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 15px;
+}
+.liquid .drop .content form .inputbox input[type="submit"] {
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+
+}
+.liquid .drop .content form .inputbox:last-child {
+    background: #03a9f4;
+    width: 120px;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+                15px 15px 10px rgba(0, 0, 0, 0.05),
+                15px 10px 15px rgba(0, 0, 0, 0.025);
+    transition: 0.5s;
+}
+.liquid .drop .content form .inputbox:last-child:hover {
+    width: 150px;
+}
+.btns {
+    position: absolute;
+    right: 100px;
+    bottom: 0px;
+    width: 120px;
+    height: 120px;
+    background: #03a9f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.2em;
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
+    text-align: center;
+    box-shadow: inset 10px 10px 10px rgba(1, 180, 255, 0.05),
+    15px 25px 10px rgba(1, 180, 255, 0.1),
+    15px 20px 20px rgba(1, 180, 255, 0.1),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.5);
+    border-radius: 45% 56% 62% 38% / 57% 55% 45% 43%;
+    transition: 0.25s;
+}
+.btns:hover {
+    border-radius: 50%;
+}
+.btns::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.45;
+}
+.btns.linkedin {
+    bottom: 150px;
+    right: 100px;
+    width: 90px;
+    height: 90px;
+    border-radius: 49% 51% 52% 48% / 63% 59% 41% 37%;
+    box-shadow: inset 10px 10px 10px rgba(1, 180, 255, 0.05),
+    15px 25px 10px rgba(1, 180, 255, 0.1),
+    15px 20px 20px rgba(1, 180, 255, 0.1),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.5);
+    background: #03a9f4;
+}
+.btns.linkedin::before {
+    left: 20px;
+    width: 15px;
+    height: 15px;
+}
+.btns.linkedin::after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 33px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.45;
+}
+.btns.linkedin:hover {
+    border-radius: 50%;
+}
 
 .credits{
     font-size: 1em;
